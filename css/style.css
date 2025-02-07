@@ -5,12 +5,27 @@
     padding: 0;
 }
 
-
 :root {
     --primary-color: #1f90e4;
     --orange-color: #e56a1f;
     --light-color: #f4f4f6;
-    --dark-color: #060635;
+    --dark-color: #1e1e89;
+    --gray-color: #343447;
+}
+
+
+/*font family*/
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('../fonts/lemon_milk/LEMONMILK-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lemon Milk Bold';
+    src: url('../fonts/lemon_milk/LEMONMILK-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -90,6 +105,7 @@ img {
 }
 
 
+
 /* buttons */
 .btn {
     display: inline-block;
@@ -116,8 +132,16 @@ img {
 }
 
 .btn-dark {
+    letter-spacing: 3px;
+    font-weight: 600;
     background: var(--dark-color);
     color: #fff;
+    border-radius: 30px;
+    padding: 15px 30px;
+}
+.btn-dark:hover {
+    background: var(--gray-color);
+    opacity: 0.8;
 }
 
 .btn-light {
