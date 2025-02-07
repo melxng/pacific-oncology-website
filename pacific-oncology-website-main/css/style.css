@@ -1,0 +1,150 @@
+/* global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #1f90e4;
+    --orange-color: #e56a1f;
+    --light-color: #f4f4f6;
+    --dark-color: #1e1e89;
+    --gray-color: #343447;
+}
+
+
+/*font family*/
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('../fonts/lemon_milk/LEMONMILK-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lemon Milk Bold';
+    src: url('../fonts/lemon_milk/LEMONMILK-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* navigation bar */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .main-menu ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 8px 15px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+
+}
+
+.navbar ul li a:hover {
+    color: var(--orange-color);
+}
+
+
+
+/* ultility classes */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+/* buttons */
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    background: var(--light-color);
+    color: #333;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 10px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btn-dark {
+    letter-spacing: 3px;
+    font-weight: 600;
+    background: var(--dark-color);
+    color: #fff;
+    border-radius: 30px;
+    padding: 15px 30px;
+}
+.btn-dark:hover {
+    background: var(--gray-color);
+    opacity: 0.8;
+}
+
+.btn-light {
+    background: var(--light-color);
+    color: #333;
+}
