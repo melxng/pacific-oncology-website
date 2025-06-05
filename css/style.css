@@ -124,3 +124,11 @@ img {
     background: var(--light-color);
     color: #333;
 }
+
+/* text classes */
+.text-xxl {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
