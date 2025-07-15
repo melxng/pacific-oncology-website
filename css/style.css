@@ -83,7 +83,7 @@ img {
     position: absolute;
     inset: 0;
     background: url('../images/beach_bg.jpg') no-repeat center center/cover;
-    opacity: 0.80; /* adjust for desired transparency */
+    opacity: 0.60; /* adjust transparency */
     z-index: 0;
 }
 
@@ -103,14 +103,20 @@ img {
 
 .hero-content h1 {
     font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
     line-height: 1.2;
     font-weight: 600;
     margin-bottom: 20px;
+    font-style: italic;
 }
 
 .hero-content p {
     margin-bottom: 30px;
-    color: #333;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #000;
 }
 
 
@@ -158,6 +164,12 @@ img {
     font-size: 18px;
     text-decoration: none;
     margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-learn-more:hover {
+    opacity: 0.5;
 }
 
 
@@ -201,7 +213,6 @@ img {
     font-weight: 700;
     color: #019bc4;
 }
-
 
 
 
