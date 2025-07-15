@@ -68,8 +68,102 @@ img {
 }
 
 
+/* hero section */
+.hero {
+    position: relative;
+    background: none;
+    color: #000;
+    padding: 275px 0px;
+    text-align: center;
+    margin-bottom: 60px; /* adds space below hero before footer */
+}
 
-/* ultility classes */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('../images/beach_bg.jpg') no-repeat center center/cover;
+    opacity: 0.80; /* adjust for desired transparency */
+    z-index: 0;
+}
+
+.hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* hero content */
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+
+
+
+/* mission content */
+.mission {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 0px;
+    
+}
+
+.mission h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.mission p {
+    margin-bottom: 30px;
+    color: #1b1b1b;
+    font-size: 18px;
+}
+
+.mission p2 {
+    margin-bottom: 40px;
+    color: #1b1b1b;
+    font-size: 18px;
+}
+
+.mission ul {
+    padding-left: 20px;
+}
+
+.mission ul li {
+    margin-bottom: 10px;
+}
+
+.mission .btn-learn-more {
+    background: var(--orange-color);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 13px 25px;
+    font-size: 18px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* utility classes */
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -82,12 +176,33 @@ img {
     padding: 0 15px;
 }
 
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+
+
+
+
+/* footer */
+.footer-stuff {
+    color: #000;
+    padding: 60px 0;
     text-align: center;
+    margin-bottom: 60px;
+    box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
 }
+
+.footer-stuff h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #0c58bc;
+}
+
+.footer-stuff .highlight {
+    font-weight: 700;
+    color: #019bc4;
+}
+
+
 
 
 /* buttons */
@@ -123,6 +238,15 @@ img {
 .btn-light {
     background: var(--light-color);
     color: #333;
+}
+
+.btn-learn-more {
+    background: var(--orange-color);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 15px 25px;
+    font-size: 16px;
 }
 
 /* text classes */
