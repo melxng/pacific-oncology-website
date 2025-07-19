@@ -42,6 +42,9 @@ img {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 
@@ -49,6 +52,9 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .navbar .main-menu ul {
@@ -72,10 +78,15 @@ img {
 
 /* hero section */
 .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 100px 0; /* reduced by 30px total */
+    text-align: left;
     position: relative;
     background: none;
     color: #000;
-    padding: 275px 0px;
     text-align: center;
     margin-bottom: 60px; /* adds space below hero before footer */
 }
@@ -96,19 +107,10 @@ img {
 
 
 /* hero content */
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    padding: 150px 0;
-    text-align: left;
-}
-
 .hero-content {
     flex: 1 1 0;
     max-width: 600px;
-    padding: 0 20px;
+    padding: 0 60px;
     margin: 0;
 }
 
@@ -117,10 +119,11 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: -30px;
 }
 
 .hero-image img {
-    width: 320px;
+    width: 360px;
     height: auto;
     object-fit: contain;
     border-radius: 0;
@@ -128,7 +131,7 @@ img {
 }
 
 .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     font-family: 'Poppins', sans-serif;
     color: #000;
     line-height: 1.2;
@@ -139,13 +142,12 @@ img {
 
 .hero-content p {
     margin-bottom: 30px;
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: #000;
+    padding-right: 20px;
 }
-
-
 
 
 
@@ -159,7 +161,8 @@ img {
 
 .mission h2 {
     font-size: 2rem;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .mission p {
@@ -168,7 +171,7 @@ img {
     font-size: 18px;
 }
 
-.mission p2 {
+.mission .spacer {
     margin-bottom: 40px;
     color: #1b1b1b;
     font-size: 18px;
@@ -201,6 +204,106 @@ img {
 
 
 
+/* about header */
+.about-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 200px 0; /* reduced by 30px total */
+    text-align: left;
+    position: relative;
+    background: none;
+    text-align: center;
+    margin-bottom: 60px; /* adds space below hero before footer */
+}
+
+.about-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('../images/mountain_background.jpg') no-repeat center center/cover;
+    opacity: 0.70; /* adjust transparency */
+    z-index: 0;
+}
+
+.about-header .about-content {
+    flex: 1 1 0;
+    max-width: 600px;
+    padding: 0 60px;
+    margin: 0;
+    color: #000;
+    opacity: 0.99;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.75rem;
+}
+
+
+
+/* contact header */
+.contact-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 200px 0; /* reduced by 30px total */
+    text-align: left;
+    position: relative;
+    background: none;
+    text-align: center;
+    margin-bottom: 60px; /* adds space below hero before footer */
+}
+
+.contact-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('../images/crater_lake_bg.jpg') no-repeat center center/cover;
+    opacity: 0.70; /* adjust transparency */
+    z-index: 0;
+}
+
+.contact-header .header-content {
+    flex: 1 1 0;
+    max-width: 600px;
+    padding: 0 60px;
+    margin: 0;
+    color: #000;
+    opacity: 0.99;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.25rem;
+}
+
+.contact-section {
+    padding: 20px;
+    display: flex;
+}
+
+.contact-section .contact-img{
+    flex: 2.2;
+    padding: 50px;
+    text-align: center;
+
+}
+
+.contact-section .contact-info{
+    flex: 1;
+    padding: 20px;
+    font-size: 20px;
+    color: #111;
+    margin: 0 20px;
+    text-align: left;
+}
+
+.contact-section .contact-info p {
+    margin-bottom: 20px;
+}
+
+
 
 /* utility classes */
 .container {
@@ -224,7 +327,7 @@ img {
     color: #000;
     padding: 60px 0;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.2);
     margin-top: 50px;
 }
