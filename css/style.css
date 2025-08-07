@@ -279,29 +279,40 @@ img {
 }
 
 .contact-section {
-    padding: 20px;
     display: flex;
+    align-items: center;
+    justify-content: center;  /* aligns items to the left */
+    gap: 100px;                    /* space between image and text */
+    padding: 40px 60px;           /* horizontal padding to push content inward */
+    flex-wrap: wrap;
 }
 
-.contact-section .contact-img{
-    flex: 2.2;
-    padding: 50px;
-    text-align: center;
-
+.contact-section .contact-img {
+    flex: 0 0 auto;               /* don’t let the image grow/shrink */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.contact-section .contact-info{
+.contact-section .contact-img img {
+    width: 500px;                 /* fixed image width */
+    height: auto;
+    border-radius: 12px;          /* use small round corners */
+    box-shadow:#000 0px 4px 16px rgba(0,0,0,0.10); /* subtle shadow */
+    object-fit: cover;            /* make sure image looks good */
+}
+
+.contact-section .contact-info {
     flex: 1;
-    padding: 20px;
-    font-size: 20px;
+    font-size: 18px;
     color: #111;
-    margin: 0 20px;
+    padding: 0;
+    max-width: 430px;
     text-align: left;
+    line-height: 1.6;
 }
 
-.contact-section .contact-info p {
-    margin-bottom: 20px;
-}
 
 
 
