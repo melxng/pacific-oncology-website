@@ -160,7 +160,7 @@ img {
 }
 
 .mission h2 {
-    font-size: 2rem;
+    font-size: 40px;
     margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
 }
@@ -168,7 +168,7 @@ img {
 .mission p {
     margin-bottom: 30px;
     color: #1b1b1b;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .mission .spacer {
@@ -397,8 +397,8 @@ img {
     color: #fff;
     font-weight: 600;
     border-radius: 10px;
-    padding: 15px 25px;
-    font-size: 16px;
+    padding: 25px 25px;
+    font-size: 20px;
 }
 
 /* text classes */
