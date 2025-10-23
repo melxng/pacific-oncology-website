@@ -241,6 +241,35 @@ img {
 }
 
 
+/* blog section */
+.blog-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 200px 0; /* reduced by 30px total */
+    text-align: left;
+    position: relative;
+    background: url('../images/mountain_background.jpg') no-repeat center center/cover;
+    opacity: 0.70;
+    text-align: center;
+    margin-bottom: 30px; /* adds space below hero before footer */
+}
+
+.blog-content{
+    flex: 1 1 0;
+    max-width: 600px;
+    padding: 0 60px;
+    margin: 0;
+    color: #000;
+    opacity: 0.99;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.25rem;
+}
+
+
 
 /* contact header */
 .contact-header {
