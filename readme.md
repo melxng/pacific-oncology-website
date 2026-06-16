@@ -6,4 +6,4 @@ This website (WIP) is an introduction to Pacific Oncology Care and its founder, 
 This project was created with HTML, CSS, and JavaScript code and no frameworks or libraries were used.
 
 Link to Website:
-pacificoncologycare.com
+https://pacificoncologycare.com
